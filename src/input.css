@@ -1,0 +1,397 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a{
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Satoshi', sans-serif;
+    
+}
+
+
+
+
+.nav-link > a{
+    font-size: 16px;
+    line-height: 21.6px;
+    font-family: 'Satoshi', sans-serif;
+    
+}
+
+h1{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 82px;
+    font-family: 'Clash Display', sans-serif;
+}
+
+h2{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 70px;
+    font-family: 'Clash Display', sans-serif;
+}
+
+h3{
+    /* color: #FFFFFF; */
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Clash Display', sans-serif;
+}
+h4{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39.36px;
+    font-family: 'Clash Display', sans-serif;
+}
+
+.logo{
+    font-size: 47px;
+    font-style: italic;
+    /* font-weight: 400; */
+    line-height: 47x;
+}
+
+.course-title{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32.4px;
+    font-family: 'Clash Display', sans-serif;
+}
+
+p{
+    font-size: 16px;
+    line-height: 28px;
+    font-family: 'Satoshi', sans-serif;
+}
+
+.best-reason,.job-title{
+    font-size: 12px;
+    color: #A1A1A1;
+    line-height: 28px;
+    font-family: 'Satoshi', sans-serif;
+}
+.best-title{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Clash Display', sans-serif;
+}
+
+.category{
+    font-size: 12px;
+    line-height: 16.2px;
+    color: #1E5DCE;
+    font-weight: 700;
+    font-family: 'Satoshi', sans-serif;
+}
+
+.category-link{
+    font-size: 16px;
+    line-height: 21.6px;
+    font-weight: 700;
+    color: #004DB3;
+    font-family: 'Satoshi', sans-serif;
+}
+
+.price{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24.6px;
+    color: #004DB3;
+    font-family: 'Satoshi', sans-serif;
+}
+
+.comment{
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 500;
+    color: #A1A1A1;
+    font-family: 'Satoshi', sans-serif;
+}
+
+.comment-name{
+    font-size: 14px;
+    line-height: 18.9px;
+    font-weight: 700;
+    color: #000000;
+    font-family: 'Clash Display', sans-serif;
+}
+
+.input-link{
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #054FB3;
+    color: #FFFFFF;
+    padding: 13.5px 15.5px;
+    font-family: 'Satoshi', sans-serif;
+}
+
+.anime-wrapper{
+    animation: compAnimation 10s linear 0s infinite running ;
+    /* width: 100000px; */
+}
+@keyframes compAnimation {
+    100%{
+        transform: translateX(-1200px);
+    }
+    
+}
+
+
+
+.filterDiv {
+    display: none;
+    transition: all ease-in-out 0.2s;
+  }
+.show {
+    display: block;
+  }
+  
+  .contain {
+    margin-top: 20px;
+    overflow: hidden;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  .btn.active {
+    background-color: #FFFFFF;
+  }
+
+  .accordion {
+    /* background-color: #eee; */
+    color: #000F24;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border-bottom: 1px solid #EAEAEA;
+    text-align: left;
+    outline: none;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32.4px;
+    transition: 0.4s;
+  }
+  
+  .accordion:after {
+    content: url('/dist/images/add.png');
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active1:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+  .active1, .accordion:hover {
+    background-color: #ccc; 
+    color: #004DB3;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  .panel>p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #A1A1A1;
+    font-weight: 500;
+  }
+
+  .splide__pagination__page.is-active{
+    background-color:#004DB3 !important ;
+  }
+
+  .splide__arrow{
+    display: none !important;
+  }
+
+  .bar{
+    display: block;
+    background-color: #FFFFFF;
+    width: 25px;
+    height: 2px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+.hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(2){
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+@media screen and (max-width: 800px){
+    
+    .nav-menu{
+        position: fixed;
+        top: 0;
+        left: -100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        height: 100vh;
+        width: 100%;
+        transition: ease-in-out 0.3s;
+        z-index: 10;
+        text-align: center;
+        background-color: #004DB3;
+    
+    }
+
+    .hamburger.active{
+        position: fixed;
+        /* background-color: #B35920; */
+        top: 10%;
+        right: 5%;
+        z-index: 10;
+    }
+
+    /* .hamburger.active .bar{
+        background-color: #004DB3;
+    } */
+
+    .nav-menu.active{
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+
+    .nav-link > a{
+        font-size: 16px;
+        line-height: 21.6px;
+        
+    }
+}
+
+@media screen and (max-width:425px) {
+    a{
+        cursor: pointer;
+        font-size: 8px;
+        line-height: 10.8px;
+    }
+
+    .nav-link > a{
+        line-height: 21.6px;
+    }
+    
+    h1{
+        font-size: 32px;
+        line-height: 45.78px;
+    }
+    
+    h2{
+        font-size: 24px;
+        line-height: 36px;
+    }
+    
+    h3{
+        font-size: 12px;
+        line-height: 16.2px;
+    }
+    h4{
+        font-size: 32px;
+        line-height: 39.36px;
+    }
+    
+    .logo{
+        font-size: 19.16px;
+        line-height: 36.69px;
+    }
+    
+    .course-title{
+        font-size: 8px;
+        line-height: 10.8px;
+    }
+    
+    p{
+        font-size: 8px;
+        line-height: 16px;
+    }
+    
+    .best-reason,.job-title{
+        font-size: 8px;
+        line-height: 16px;
+    }
+    .best-title{
+        font-size: 12px;
+        line-height: 16.2px;
+
+    }
+    
+    .category{
+        font-size: 4px;
+        line-height: 5.4px;
+    }
+    
+    .category-link{
+        font-size: 8px;
+        line-height: 10.8px;
+    }
+    
+    .price{
+        font-size: 8px;
+        line-height: 9.84px;
+    }
+    
+    .comment{
+        font-size: 10px;
+        line-height: 13.5px;
+    }
+    
+    .comment-name{
+        font-size: 10px;
+        line-height: 13.5px;
+    }
+
+    .accordion{
+        font-size: 14px;
+        line-height: 18.9px;
+    }
+    
+    .input-link{
+        font-size: 14px;
+    }
+
+    .panel>p{
+        font-size: 8px;
+        line-height: 16px;
+    }
+
+    .footer-sub-head{
+        font-size: 24px;
+        line-height: 25.92px;
+    }
+
+    .footer-links{
+        font-size:16px ;
+        line-height: 21.6px;
+    }
+    
+}
