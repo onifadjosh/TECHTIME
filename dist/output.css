@@ -862,6 +862,10 @@ video {
   gap: 24px;
 }
 
+.gap-\[30\.25px\] {
+  gap: 30.25px;
+}
+
 .gap-\[4\.67px\] {
   gap: 4.67px;
 }
@@ -1324,7 +1328,7 @@ p{
 }
 
 .accordion:after {
-  content: url('dist/images/add.png');
+  content: url('add.png');
   font-size: 13px;
   color: #777;
   float: right;
@@ -1641,6 +1645,10 @@ p{
 
   .md\:gap-\[10px\] {
     gap: 10px;
+  }
+
+  .md\:gap-\[30\.38px\] {
+    gap: 30.38px;
   }
 
   .md\:gap-\[74px\] {

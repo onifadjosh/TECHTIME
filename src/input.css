@@ -186,7 +186,7 @@ p{
   }
   
   .accordion:after {
-    content: url('dist/images/add.png');
+    content: url('add.png');
     font-size: 13px;
     color: #777;
     float: right;
